@@ -66,15 +66,6 @@ def create_product(product_data:ProductDTO):
     return{"status": "product created successfully...", "data":products}
 
 
-# @app.put(f"/update_product/{product_id}")
-
-# def update_product(product_data:ProductDTO, product_id:int):
-
-#     for index, oneProduct in enumerate(products):
-#         print(oneProduct)
-
-
-#     return {"status": "product created successfully...", }
 
 @app.put("/update_product/{product_id}")
 def update_product(product_id: int, product_data: ProductDTO):
